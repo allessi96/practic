@@ -87,7 +87,6 @@
                 <a href="#0" class="cd-close-form">Закрыть</a>
             </div> <!-- cd-user-modal-container -->
         </div> <!-- cd-user-modal -->
-        
         <iframe id="contacts" src="search.jsp">Обновите браузер</iframe>
         <iframe id="contact-info">Обновите браузер</iframe>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

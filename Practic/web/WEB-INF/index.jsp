@@ -40,22 +40,22 @@
                 </ul>
 
                 <div id="cd-login"> <!-- форма входа -->
-                    <form class="cd-form">
+                    <form class="cd-form"  method="POST" action="doLogin">
                         <p class="fieldset">
-                            <label class="image-replace cd-email" for="signin-email">Логин</label>
-                            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                            <label class="image-replace cd-email"  for="signin-email">Логин</label>
+                            <input class="full-width has-padding has-border" name="userName" id="signin-email" type="text" placeholder="E-mail">
                             <span class="cd-error-message">Здесь сообщение об ошибке!</span>
                         </p>
 
                         <p class="fieldset">
                             <label class="image-replace cd-password" for="signin-password">Пароль</label>
-                            <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Пароль">
+                            <input class="full-width has-padding has-border" name="password" id="signin-password" type="text"  placeholder="Пароль">
                             <a href="#0" class="hide-password">Скрыть</a>
                             <span class="cd-error-message">Здесь сообщение об ошибке!</span>
                         </p>
 
                         <p class="fieldset">
-                            <input type="checkbox" id="remember-me" checked>
+                            <input type="checkbox" name="rememberMe" value= "Y" id="remember-me" checked>
                             <label for="remember-me">Запомнить меня</label>
                         </p>
 
