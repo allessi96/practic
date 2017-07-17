@@ -21,6 +21,7 @@
         <header role="banner">
             <nav class="main-nav">
                 <ul>
+                    <li style="color:white;">Имя</li>
                     <li><a class="cd-signin" href="#0">Выход</a></li>
                     <li><a class="cd-signup" href="#0">Создать контакт</a></li>
                 </ul>
@@ -87,8 +88,45 @@
                 <a href="#0" class="cd-close-form">Закрыть</a>
             </div> <!-- cd-user-modal-container -->
         </div> <!-- cd-user-modal -->
-        <iframe id="contacts" src="search.jsp">Обновите браузер</iframe>
-        <iframe id="contact-info">Обновите браузер</iframe>
+        <div id="contacts">
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+            <a hreh="#строказапросакаквпримере" class="contactList">Псевдоним</a>
+            <hr>
+        </div>
+        <div id="contact-info">
+            <img src="путь" alt="photo">
+            <h2>Фамилия:</h2><p>Значение</p>
+            <h2>Имя:</h2><p>Значение</p>
+            <h2>Отчество:</h2><p>Значение</p>
+            <h2>Псевдоним:</h2><p>Значение</p>
+            <h2>E-mail:</h2><p>Значение</p>
+            <h2>Телефон:</h2><p>Значение</p>
+            <h2>Примечание:</h2><p>Значение</p>
+        </div>
+         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/main.js"></script> <!-- Gem jQuery -->
     </body>

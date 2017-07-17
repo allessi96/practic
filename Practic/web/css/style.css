@@ -109,13 +109,21 @@ header[role=banner]::after {
     width: 25%;
     height: 87.8%;
     background-color: white;
-    display: inline-block;
+    position: absolute;
+    top: 12.2%;
+    overflow-y: scroll;
+    scrollbar-base-color: #2f889a;
 }
+
 #contact-info{
     width: 74.5%;
     height: 87.8%;
     background-color: white;
-    display: inline-block;
+    position: absolute;
+    top: 12.2%;
+    right: 0;
+    overflow-y: scroll;
+    scrollbar-base-color: #2f889a;
 }
 .name {
   margin-right: 5%;
@@ -280,7 +288,7 @@ xnugget info
 xsigin/signup popup 
 
 -------------------------------- */
-.cd-user-modal {
+.cd-user-modal, .search-modal{
   position: fixed;
   top: 0;
   left: 0;
@@ -296,21 +304,21 @@ xsigin/signup popup
   -moz-transition: opacity 0.3s 0, visibility 0 0.3s;
   transition: opacity 0.3s 0, visibility 0 0.3s;
 }
-.cd-user-modal.is-visible {
+.cd-user-modal.is-visible, .search-modal.is-visible{
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.3s 0, visibility 0 0;
   -moz-transition: opacity 0.3s 0, visibility 0 0;
   transition: opacity 0.3s 0, visibility 0 0;
 }
-.cd-user-modal.is-visible .cd-user-modal-container {
+.cd-user-modal.is-visible .cd-user-modal-container, .search-modal.is-visible #search-form{
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-.cd-user-modal-container {
+.cd-user-modal-container, #search-form{
   position: relative;
   width: 90%;
   max-width: 600px;
@@ -359,7 +367,7 @@ xsigin/signup popup
   color: #505260;
 }
 @media only screen and (min-width: 600px) {
-  .cd-user-modal-container {
+  .cd-user-modal-container, #search-form{
     margin: 4em auto;
   }
   .cd-user-modal-container .cd-switcher a {
@@ -580,9 +588,42 @@ xsigin/signup popup
   display: block;
 }
 
-.cd-form input.search{
-    width: 47%;
-    margin: 0;
+.search{
+    padding: 1em 2em;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50em;
+    background: #2f889a;
+    display: block;
+    border: none;
+    color: white;
+    width: 80%;
+    margin: 25px auto;
     text-align: center;
-    padding: 10px 10px;
 }
+.contactList{
+    text-decoration: none;
+    color: black;
+}
+#contact-info img{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+}
+#contact-info h2 {
+    color: #7c795d;
+    font-family: ‘Source Sans Pro’, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 24px; 
+    display: inline;
+}
+
+#contact-info p { 
+    color: #4c4a37; 
+    font-family: ‘Source Sans Pro’, sans-serif; 
+    font-size: 18px; 
+    line-height: 25px; 
+    margin: 0 0 24px; }
